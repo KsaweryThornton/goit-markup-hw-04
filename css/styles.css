@@ -185,31 +185,36 @@ div > a[href="tel:+48111111111"] {
 .header-box {
   display: flex;
   width: 1600px;
-  justify-content: center;
-  align-items: baseline;
-  margin: 0;
-  padding: 24px 227px 25px 215px;
+  justify-content: space-between;
+  padding-inline: 215px;
+  padding-block: 24px;
+  align-items: center;
   border-bottom: 1px solid #e5e5e5;
-  align-items: baseline;
+}
+
+.navigation {
+  flex-grow: 2;
+  padding: 0;
+  margin: 0;
 }
 
 .logo {
-  width: 145px;
+  margin: 0;
+  padding: 0;
 }
 
 .menu-box {
   display: flex;
-  width: 254px;
-  justify-content: space-between;
-  margin: 0 371px 0 93px;
-  align-items: center;
+  gap: 46px;
+  margin: 0;
 }
 
 .contact-box {
   display: flex;
-  width: 295px;
-  justify-content: space-between;
+  align-items: baseline;
   gap: 50px;
+  padding: 0;
+  margin: 0;
 }
 
 ul {
@@ -222,6 +227,8 @@ ul {
   flex-direction: column;
   align-items: center;
   background-color: var(--background-color-one);
+  background-image: url(../images/img17.jpg);
+  background-size: 1600px;
   padding: 0;
 }
 
