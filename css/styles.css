@@ -28,8 +28,13 @@ body {
   width: 1600px;
 }
 
+.contact-information {
+  fill: var(--second-important-color);
+}
+
 .contact-information:hover {
   color: var(--brand-color);
+  fill: var(--brand-color);
 }
 
 .interactive-elements:hover {
@@ -140,6 +145,7 @@ button {
 .portfolio-buttons:hover {
   color: var(--third-important-color);
   background-color: var(--brand-color);
+  box-shadow: 2px 2px 10px #000;
 }
 
 p > strong {
@@ -227,7 +233,8 @@ ul {
   flex-direction: column;
   align-items: center;
   background-color: var(--background-color-one);
-  background-image: url(../images/img17.jpg);
+  background: linear-gradient(rgba(255, 255, 255, 0.2), rgba(0, 0, 0, 0.6)),
+    url(../images/img17.jpg);
   background-size: 1600px;
   padding: 0;
 }
@@ -239,9 +246,19 @@ ul {
 .second-section-box {
   display: flex;
   width: 1600px;
+  padding-inline: 215px;
   gap: 30px;
-  justify-content: center;
+  justify-content: space-between;
   margin: 0;
+}
+
+.second-section-icons-background {
+  width: 270px;
+  height: 120px;
+  background-color: #f5f4fa;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 .third-section-header {
@@ -257,6 +274,28 @@ ul {
   margin: 0;
   padding: 0;
   justify-content: center;
+}
+
+.social-media-icons {
+  display: flex;
+  justify-content: space-between;
+  padding-inline: 32px;
+  padding-bottom: 30px;
+}
+
+.icon-box {
+  width: 40px;
+  height: 40px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 50%;
+  fill: #afb1b8;
+}
+
+.icon-box:hover {
+  background-color: var(--brand-color);
+  fill: var(--third-important-color);
 }
 
 .fourth-section {
@@ -279,9 +318,27 @@ ul {
 
 footer {
   width: 1600px;
-  padding: 60px 0 60px 215px;
+  padding-block: 60px;
   background-color: var(--background-color-one);
 }
+
+.all-footer {
+  display: flex;
+  gap: 70px;
+  align-items: baseline;
+}
+
+.find-us {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.footer {
+  width: 246px;
+  margin-left: 215px;
+}
+
 .footer-logo {
   width: 145px;
 }
@@ -295,6 +352,40 @@ footer {
 
 .footer-logo-span {
   color: var(--third-important-color);
+}
+
+.footer-pharagraph {
+  font-family: "Roboto";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 16px;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+  color: var(--third-important-color);
+  margin: 0;
+  padding: 0;
+}
+
+.footer-social-media-icons {
+  display: flex;
+  justify-content: space-between;
+  width: 206px;
+}
+
+.footer-icon-box {
+  width: 40px;
+  height: 40px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 50%;
+  background-color: rgba(0, 0, 0, 0.1);
+  fill: var(--third-important-color);
+}
+
+.footer-icon-box:hover {
+  background-color: var(--brand-color);
 }
 
 .workers-list-item {
@@ -367,6 +458,10 @@ figcaption {
   border-bottom: 1px solid #e5e5e5;
   margin: 0;
   width: calc((100% - 60px) / 3);
+}
+
+.portfolio-items:hover {
+  box-shadow: 4px 4px 10px #000;
 }
 
 .portfolio-figcaption {
