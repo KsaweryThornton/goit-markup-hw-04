@@ -468,3 +468,43 @@ figcaption {
   padding-left: 24px;
   padding-right: 24px;
 }
+
+.customers-icon {
+  width: 170px;
+  height: 92px;
+  border: 1px solid #afb1b8;
+  border-radius: 4px;
+  fill: #afb1b8;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 0;
+  padding: 0;
+}
+
+.customers-icon:hover {
+  border: 1px solid var(--brand-color);
+  fill: var(--brand-color);
+}
+
+.customers-section-title {
+  font-family: "Roboto";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 36px;
+  line-height: 42px;
+  text-align: center;
+  letter-spacing: 0.03em;
+  color: var(--first-important-color);
+  margin-top: 94px;
+  margin-bottom: 50px;
+}
+
+.customers-section-box {
+  display: flex;
+  width: 1600px;
+  gap: 30px;
+  padding-inline: 215px;
+  margin-bottom: 94px;
+  justify-content: space-between;
+}
